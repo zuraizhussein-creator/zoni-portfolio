@@ -21,12 +21,12 @@ import {
 // ---------- Basic profile ----------
 export const profile = {
   fullName: "Zuraiz Hussain",
-  displayName: "Zoni",
-  headline: "Hey, I'm Zoni.",
+  displayName: "Zony",
+  headline: "Hey, I'm Zony.",
   subheading:
     "I help businesses connect with the right people, communicate clearly, and turn conversations into opportunities.",
   labels: ["B2B Sales", "SaaS Copywriting", "Lead Generation", "Digital Marketing"],
-  bio: "I'm Zoni, a professional focused on B2B sales, SaaS content, and business communication. My work combines research, outreach, persuasive writing, and understanding how products solve real customer problems. I've contributed to projects involving legislative technology, digital products, and business growth.",
+  bio: "I'm Zony, a professional focused on B2B sales, SaaS content, and business communication. My work combines research, outreach, persuasive writing, and understanding how products solve real customer problems. I've contributed to projects involving legislative technology, digital products, and business growth.",
 };
 
 // ---------- Contact details ----------
@@ -41,9 +41,9 @@ export const contact = {
 
 // ---------- Search engine info (shown in Google & browser tabs) ----------
 export const seo = {
-  title: "Zoni | B2B SaaS Copywriting, Sales & Lead Generation",
+  title: "Zony | B2B SaaS Copywriting, Sales & Lead Generation",
   description:
-    "Portfolio of Zuraiz Hussain (Zoni): B2B sales, SaaS copywriting, lead generation and digital marketing.",
+    "Portfolio of Zuraiz Hussain (Zony): B2B sales, SaaS copywriting, lead generation and digital marketing.",
 };
 
 // ---------- Navigation tabs ----------

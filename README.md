@@ -1,6 +1,6 @@
 # Zoni Portfolio
 
-Personal portfolio website for **Zuraiz Hussain (Zoni)**, built with Next.js, React, Tailwind CSS and Lucide icons. Hosted free on Vercel.
+Personal portfolio website for **Zuraiz Hussain (Zony)**, built with Next.js, React, Tailwind CSS and Lucide icons. Hosted free on Vercel.
 
 ## Run it on your computer
 

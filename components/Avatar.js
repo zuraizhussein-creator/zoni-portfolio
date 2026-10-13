@@ -16,7 +16,7 @@ export default function Avatar() {
         aria-labelledby="avatar-title"
         className="animate-float relative h-full w-full drop-shadow-2xl"
       >
-        <title id="avatar-title">Illustrated avatar of Zoni</title>
+        <title id="avatar-title">Illustrated avatar of Zony</title>
         <defs>
           <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#3b82f6" />
@@ -58,15 +58,16 @@ export default function Avatar() {
         <ellipse cx="134" cy="195" rx="12" ry="18" fill="#c98d68" />
         <ellipse cx="266" cy="195" rx="12" ry="18" fill="#c98d68" />
 
-        {/* Head */}
-        <ellipse cx="200" cy="188" rx="66" ry="78" fill="#d9a07a" />
-
-        {/* Short trimmed beard */}
+        {/* Head with a strong, angular jawline */}
         <path
-          d="M136 196 Q138 262 200 270 Q262 262 264 196 Q256 236 228 244 Q200 236 172 244 Q144 236 136 196 Z"
-          fill="#2a211c"
-          opacity="0.9"
+          d="M200 110 C246 110 268 140 268 184 L267 226 Q266 240 256 248 L226 270 Q200 280 174 270 L144 248 Q134 240 133 226 L132 184 C132 140 154 110 200 110 Z"
+          fill="#d9a07a"
         />
+        {/* Jaw contour shading */}
+        <path d="M134 222 Q135 240 146 248 L176 270 Q160 252 150 238 Q140 230 134 222 Z" fill="#a86c4b" opacity="0.6" />
+        <path d="M266 222 Q265 240 254 248 L224 270 Q240 252 250 238 Q260 230 266 222 Z" fill="#a86c4b" opacity="0.6" />
+        {/* Chin highlight */}
+        <path d="M188 262 Q200 268 212 262" stroke="#b57a57" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.6" />
 
         {/* Hair */}
         <path
