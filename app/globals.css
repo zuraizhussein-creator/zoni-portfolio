@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens: colors & fonts ---------- */
+@theme {
+  --color-navy: #101827;
+  --color-navy-light: #172238;
+  --color-card: #19243a;
+  --color-ink: #eef1f6;
+  --color-muted: #a3adc2;
+  --color-electric: #3b82f6;
+  --color-electric-bright: #60a5fa;
+  --color-cyan: #22d3ee;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), ui-sans-serif, sans-serif;
+}
+
+/* ---------- Base page styles ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-navy);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Keeps section titles from hiding under the fixed navigation bar */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background: var(--color-electric);
+  color: white;
+}
+
+/* Clear focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--color-electric-bright);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- Animations ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-spin-slow { animation: spin-slow 30s linear infinite; }
+.animate-fade-up { animation: fade-up 0.8s ease-out both; }
+.animate-blink { animation: blink 5s infinite; transform-origin: center; transform-box: fill-box; }
+
+/* Elements that fade in when scrolled into view (see components/Reveal.js) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-float, .animate-spin-slow, .animate-fade-up, .animate-blink { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

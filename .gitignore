@@ -1,0 +1,13 @@
+# Installed packages (re-created by "npm install")
+/node_modules
+
+# Build output (re-created by "npm run build")
+/.next
+/out
+
+# Logs and local files
+npm-debug.log*
+.DS_Store
+.env*.local
+.vercel
+.claude
